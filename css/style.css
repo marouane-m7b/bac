@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --main-white: #f3f3f3;
+    --black: black;
+    --dark-blue: #00263f;
+    --darkest-blue: #001320;
+    --light-blue: #54a0ff;
+    --blue: #1f8dd6;
+    --blue-plus: #1070b1;
+    --transparent: transparent;
+    --main-font: 'Marhey', cursive;
+}
+
+.dark-theme {
+    --main-white: #000000;
+    --black: #f3f3f3;
+    --dark-blue: #000000;
+    --darkest-blue: #141414;
+    --light-blue: #525252;
+    --blue: #2c2c2c;
+    --blue-plus: #141414;
+    --transparent: transparent;
+}
+
+body {
+    font-family: var(--main-font);
+    direction: rtl;
+    font-family: var(--main-font);
+    transition: 0.3s;
+    background-color: #bee5ff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--dark-blue);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--light-blue);
+    color: var(--main-white);
+    transition: 0.3s;
+}
+
+header a {
+    padding: 15px 20px;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+header a:hover {
+    background-color: var(--darkest-blue);
+    transition: 0.3s;
+}
+
+header a:active {
+    background-color: var(--darkest-blue);
+}
+
+header div {
+    padding: 15px 20px;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: var(--main-white);
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: var(--blue);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--light-blue);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.title.active {
+    background-color: var(--blue-plus);
+}
+
+.title svg {
+    transition: 0.3s;
+}
+
+.title.active svg {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+strong {
+    font-weight: 300;
+}
+
+.points {
+    padding: 0;
+    background-color: var(--main-white);
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.points.active {
+    max-height: fit-content;
+    transition: 0.3s;
+}
+
+@media (min-width: 765px) {
+    .pointscontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.point {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+label {
+    color: var(--black);
+}
+
+.calc {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: var(--blue);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--light-blue);
+    color: var(--main-white);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.calc input {
+    padding: 5px 20px;
+    width: 100px;
+}
+
+.calc input[type=button] {
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    background-color: var(--light-blue);
+    border: none;
+    outline: none;
+    border: 2px solid var(--main-white);
+    transition: 0.3s;
+}
+
+.calc input[type=button]:hover {
+    background-color: var(--blue-plus);
+}
+
+input[type=number] {
+    background-color: var(--transparent);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--black);
+    width: 50%;
+    transition: 0.4s;
+    color: var(--black);
+}
+
+input[type=number]:focus {
+    border-bottom: 2px solid var(--light-blue);
+}
+
+
+@media (max-width:766px) {
+    input:disabled {
+        display: none;
+    }
+
+    .point:has(input:disabled) {
+        display: none;
+    }
+
+    .popup input:disabled {
+        display: block;
+    }
+}
+
+.popup .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.popup .content {
+    display: grid;
+    place-content: center;
+    width: 50%;
+    height: 50%;
+    background-color: var(--blue-plus);
+    border: 2px solid white;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.3s;
+}
+
+.popup .content.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.3s;
+}
+
+.popup .content svg {
+    width: 30px;
+    height: 30px;
+    background-color: var(--blue-plus);
+    border: 2px solid white;
+    position: fixed;
+    top: -15px;
+    left: -15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup .content .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup .content .text div {
+    font-size: 30px;
+    margin: 30px;
+    font-family: var(--main-font);
+}
+
+.popup .content input {
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-family: var(--main-font);
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .popup .content {
+        width: 80%;
+        height: 20%;
+    }
+
+    .popup .content .text div {
+        margin: 10px;
+    }
+}
+
+.container2 {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100vh;
+    padding: 40px 0;
+    display: grid;
+    place-items: center;
+}
+
+.container2 a {
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px;
+    width: 80%;
+    background-color: var(--blue);
+    border: none;
+    outline: none;
+    border-bottom: 5px solid var(--light-blue);
+    border-right: 5px solid var(--light-blue);
+    color: var(--main-white);
+    cursor: pointer;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.container2 a:hover {
+    background-color: var(--light-blue);
+    transition: 0.3s;
+}
+
+.title2 {
+    color: white;
+}
+
+#checkbox {
+    display: none;
+}
+
+.toggler {
+    display: block;
+    width: 60px;
+    height: 31px;
+    border: 2px solid var(--blue);
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.ball,
+.sun,
+.moon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ball {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: var(--blue);
+    transition: 0.3s;
+    border-radius: 50%;
+    left: 1px;
+    z-index: 10;
+    transition: transform .5s ease-in-out;
+}
+
+.sun {
+    left: 5px;
+}
+
+.moon {
+    right: 5px;
+}
+
+#checkbox:checked+.ball {
+    transform:
+        translate(29px, -50%);
+}
+
+.ri-moon-line:before {
+    color: white;
+}
+
+.ri-sun-line:before {
+    color: white;
+}
+
+.bgray {
+    background-color: gray;
+    transition: 0.3s;
+}
+
+div.count {
+    text-align: center;
+    font-size: 25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+div.count p {
+    margin: 15px;
+}
+
+.ball {
+    z-index: -5;
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div>حساب نقطة الدورة</div><a id="back"><i class="fa-solid fa-arrow-left"></i></a>
+  </header>
+  <form class="container">
+    <div class="subject">
+      <div class="title active">
+        <strong>المواظبة و السلوك</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points active">
+        <div class="pointscontainer">
+          <div class="slkinp1 point">
+            <label for="slkinp1">الفرض 1</label>
+            <input type="number" name="" id="slkinp1" min="0" max="20">
+          </div>
+          <div class="slkinp2 point">
+            <label for="slkinp2">الفرض 2</label>
+            <input type="number" name="" id="slkinp2" disabled min="0" max="20">
+          </div>
+          <div class="slkinp3 point">
+            <label for="slkinp3">الفرض 3</label>
+            <input type="number" name="" id="slkinp3" disabled min="0" max="20">
+          </div>
+          <div class="slkinp4 point">
+            <label for="slkinp4">الفرض 4</label>
+            <input type="number" name="" id="slkinp4" disabled min="0" max="20">
+          </div>
+          <div class="slkinp5 point">
+            <label for="slkinp5">الأنشطة المندمجة</label>
+            <input type="number" name="" id="slkinp5" disabled min="0" max="20">
+          </div>
+          <div class="slkm3 point">
+            <label for="slkm3">المعامل</label>
+            <input type="number" name="" id="slkm3" value="1" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <div class="title">
+        <strong>التربية الإسلامية</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points">
+        <div class="pointscontainer">
+          <div class="eiinp1 point">
+            <label for="eiinp1">الفرض 1</label>
+            <input type="number" name="" id="eiinp1" min="0" max="20">
+          </div>
+          <div class="eiinp2 point">
+            <label for="eiinp2">الفرض 2</label>
+            <input type="number" name="" id="eiinp2" min="0" max="20">
+          </div>
+          <div class="eiinp3 point">
+            <label for="eiinp3">الفرض 3</label>
+            <input type="number" name="" id="eiinp3" disabled min="0" max="20">
+          </div>
+          <div class="eiinp4 point">
+            <label for="eiinp4">الفرض 4</label>
+            <input type="number" name="" id="eiinp4" min="0" max="20">
+          </div>
+          <div class="eiinp5 point">
+            <label for="eiinp5">الأنشطة المندمجة</label>
+            <input type="number" name="" id="eiinp5" disabled min="0" max="20">
+          </div>
+          <div class="eim3 point">
+            <label for="eim3">المعامل</label>
+            <input type="number" name="" id="eim3" value="2" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <div class="title">
+        <strong>التربية البدنية</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points">
+        <div class="pointscontainer">
+          <div class="esinp1 point">
+            <label for="esinp1">الفرض 1</label>
+            <input type="number" name="" id="esinp1" min="0" max="20">
+          </div>
+          <div class="esinp2 point">
+            <label for="esinp2">الفرض 2</label>
+            <input type="number" name="" id="esinp2" min="0" max="20">
+          </div>
+          <div class="esinp3 point">
+            <label for="esinp3">الفرض 3</label>
+            <input type="number" name="" id="esinp3" min="0" max="20">
+          </div>
+          <div class="esinp4 point">
+            <label for="esinp4">الفرض 4</label>
+            <input type="number" name="" id="esinp4" disabled min="0" max="20">
+          </div>
+          <div class="esinp5 point">
+            <label for="esinp5">الأنشطة المندمجة</label>
+            <input type="number" name="" id="esinp5" disabled min="0" max="20">
+          </div>
+          <div class="esm3 point">
+            <label for="esm3">المعامل</label>
+            <input type="number" name="" id="esm3" value="4" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <div class="title">
+        <strong>الرياضيات</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points">
+        <div class="pointscontainer">
+          <div class="matinp1 point">
+            <label for="matinp1">الفرض 1</label>
+            <input type="number" name="" id="matinp1" min="0" max="20">
+          </div>
+          <div class="matinp2 point">
+            <label for="matinp2">الفرض 2</label>
+            <input type="number" name="" id="matinp2" min="0" max="20">
+          </div>
+          <div class="matinp3 point">
+            <label for="matinp3">الفرض 3</label>
+            <input type="number" name="" id="matinp3" min="0" max="20">
+          </div>
+          <div class="matinp4 point">
+            <label for="matinp4">الفرض 4</label>
+            <input type="number" name="" id="matinp4" disabled min="0" max="20">
+          </div>
+          <div class="matinp5 point">
+            <label for="matinp5">الأنشطة المندمجة</label>
+            <input type="number" name="" id="matinp5" disabled min="0" max="20">
+          </div>
+          <div class="matm3 point">
+            <label for="matm3">المعامل</label>
+            <input type="number" name="" id="matm3" value="7" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <div class="title">
+        <strong>الفلسفة</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points">
+        <div class="pointscontainer">
+          <div class="phinp1 point">
+            <label for="phinp1">الفرض 1</label>
+            <input type="number" name="" id="phinp1" min="0" max="20">
+          </div>
+          <div class="phinp2 point">
+            <label for="phinp2">الفرض 2</label>
+            <input type="number" name="" id="phinp2" min="0" max="20">
+          </div>
+          <div class="phinp3 point">
+            <label for="phinp3">الفرض 3</label>
+            <input type="number" name="" id="phinp3" disabled min="0" max="20">
+          </div>
+          <div class="phinp4 point">
+            <label for="phinp4">الفرض 4</label>
+            <input type="number" name="" id="phinp4" min="0" max="20">
+          </div>
+          <div class="phinp5 point">
+            <label for="phinp5">الأنشطة المندمجة</label>
+            <input type="number" name="" id="phinp5" disabled min="0" max="20">
+          </div>
+          <div class="phm3 point">
+            <label for="phm3">المعامل</label>
+            <input type="number" name="" id="phm3" value="2" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <div class="title">
+        <strong>الفيزياء والكيمياء</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points">
+        <div class="pointscontainer">
+          <div class="pcinp1 point">
+            <label for="pcinp1">الفرض 1</label>
+            <input type="number" name="" id="pcinp1" min="0" max="20">
+          </div>
+          <div class="pcinp2 point">
+            <label for="pcinp2">الفرض 2</label>
+            <input type="number" name="" id="pcinp2" min="0" max="20">
+          </div>
+          <div class="pcinp3 point">
+            <label for="pcinp3">الفرض 3</label>
+            <input type="number" name="" id="pcinp3" disabled min="0" max="20">
+          </div>
+          <div class="pcinp4 point">
+            <label for="pcinp4">الفرض 4</label>
+            <input type="number" name="" id="pcinp4" min="0" max="20">
+          </div>
+          <div class="pcinp5 point">
+            <label for="pcinp5">الأنشطة المندمجة</label>
+            <input type="number" name="" id="pcinp5" disabled min="0" max="20">
+          </div>
+          <div class="pcm3 point">
+            <label for="pcm3">المعامل</label>
+            <input type="number" name="" id="pcm3" value="5" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <div class="title">
+        <strong>اللغة الإنجليزية</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points">
+        <div class="pointscontainer">
+          <div class="enginp1 point">
+            <label for="enginp1">الفرض 1</label>
+            <input type="number" name="" id="enginp1" min="0" max="20">
+          </div>
+          <div class="enginp2 point">
+            <label for="enginp2">الفرض 2</label>
+            <input type="number" name="" id="enginp2" min="0" max="20">
+          </div>
+          <div class="enginp3 point">
+            <label for="enginp3">الفرض 3</label>
+            <input type="number" name="" id="enginp3" disabled min="0" max="20">
+          </div>
+          <div class="enginp4 point">
+            <label for="enginp4">الفرض 4</label>
+            <input type="number" name="" id="enginp4" min="0" max="20">
+          </div>
+          <div class="enginp5 point">
+            <label for="enginp5">الأنشطة المندمجة</label>
+            <input type="number" name="" id="enginp5" disabled min="0" max="20">
+          </div>
+          <div class="engm3 point">
+            <label for="engm3">المعامل</label>
+            <input type="number" name="" id="engm3" value="2" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <div class="title">
+        <strong>اللغة العربية</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points">
+        <div class="pointscontainer">
+          <div class="arinp1 point">
+            <label for="arinp1">الفرض 1</label>
+            <input type="number" name="" id="arinp1" min="0" max="20">
+          </div>
+          <div class="arinp2 point">
+            <label for="arinp2">الفرض 2</label>
+            <input type="number" name="" id="arinp2" min="0" max="20">
+          </div>
+          <div class="arinp3 point">
+            <label for="arinp3">الفرض 3</label>
+            <input type="number" name="" id="arinp3" disabled min="0" max="20">
+          </div>
+          <div class="arinp4 point">
+            <label for="arinp4">الفرض 4</label>
+            <input type="number" name="" id="arinp4" min="0" max="20">
+          </div>
+          <div class="arinp5 point">
+            <label for="arinp5">الأنشطة المندمجة</label>
+            <input type="number" name="" id="arinp5" disabled min="0" max="20">
+          </div>
+          <div class="arm3 point">
+            <label for="arm3">المعامل</label>
+            <input type="number" name="" id="arm3" value="2" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <div class="title">
+        <strong>اللغة الفرنسية</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points">
+        <div class="pointscontainer">
+          <div class="frinp1 point">
+            <label for="frinp1">الفرض 1</label>
+            <input type="number" name="" id="frinp1" min="0" max="20">
+          </div>
+          <div class="frinp2 point">
+            <label for="frinp2">الفرض 2</label>
+            <input type="number" name="" id="frinp2" min="0" max="20">
+          </div>
+          <div class="frinp3 point">
+            <label for="frinp3">الفرض 3</label>
+            <input type="number" name="" id="frinp3" min="0" max="20">
+          </div>
+          <div class="frinp4 point">
+            <label for="frinp4">الفرض 4</label>
+            <input type="number" name="" id="frinp4" min="0" max="20">
+          </div>
+          <div class="frinp5 point">
+            <label for="frinp5">الأنشطة المندمجة</label>
+            <input type="number" name="" id="frinp5" min="0" max="20">
+          </div>
+          <div class="frm3 point">
+            <label for="frm3">المعامل</label>
+            <input type="number" name="" id="frm3" value="4" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <div class="title">
+        <strong>علوم الحياة والأرض</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points">
+        <div class="pointscontainer">
+          <div class="svtinp1 point">
+            <label for="svtinp1">الفرض 1</label>
+            <input type="number" name="" id="svtinp1" min="0" max="20">
+          </div>
+          <div class="svtinp2 point">
+            <label for="svtinp2">الفرض 2</label>
+            <input type="number" name="" id="svtinp2" min="0" max="20">
+          </div>
+          <div class="svtinp3 point">
+            <label for="svtinp3">الفرض 3</label>
+            <input type="number" name="" id="svtinp3" min="0" max="20">
+          </div>
+          <div class="svtinp4 point">
+            <label for="svtinp4">الفرض 4</label>
+            <input type="number" name="" id="svtinp4" min="0" max="20">
+          </div>
+          <div class="svtinp5 point">
+            <label for="svtinp5">الأنشطة المندمجة</label>
+            <input type="number" name="" id="svtinp5" disabled min="0" max="20">
+          </div>
+          <div class="svtm3 point">
+            <label for="svtm3">المعامل</label>
+            <input type="number" name="" id="svtm3" value="7" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="calc">
+      <input type="button" value="حساب" id="calc">
+      <!-- <input type="number" style="background-color: #f3f3f3;" name="" id="result"> -->
+    </div>
+    <div class="popup">
+      <div class="overlay" id="overlay"></div>
+      <div class="content" id="popup">
+        <div class="close-btn" id="close-btn"><i class="fa-solid fa-xmark"></i></div>
+        <div class="text">
+          <div>معدل الدورة :</div>
+          <input type="number" name="" disabled id="result">
+        </div>
+      </div>
+    </div>
+  </form>
+  <script src="js/all.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

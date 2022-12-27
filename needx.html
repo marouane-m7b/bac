@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div>شحال خاص باش تجيب <span id="x">'x'</span></div><a id="back"><i class="fa-solid fa-arrow-left"></i></a>
+  </header>
+  <form class="container">
+    <div class="subject">
+      <div class="points active">
+        <div class="pointscontainer">
+          <div class="regional point">
+            <label for="regional">نقطة الجهوي</label>
+            <input type="number" name="" id="regionalnx" min="0" max="20">
+          </div>
+          <div class="s1 point">
+            <label for="s1">نقطة الدورة 1</label>
+            <input type="number" name="" id="s1nx" min="0" max="20">
+          </div>
+          <div class="s2 point">
+            <label for="s2">نقطة الدورة 2</label>
+            <input type="number" name="" id="s2nx" min="0" max="20">
+          </div>
+          <div class="x point">
+            <label for="x">المعدل</label>
+            <input type="number" name="" id="xneed" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="calc">
+      <input type="button" value="حساب" id="calc-allnx">
+      <!-- <input type="number" style="background-color: #f3f3f3;" name="" id="result"> -->
+    </div>
+    <div class="popup">
+      <div class="overlay" id="overlay"></div>
+      <div class="content" id="popup">
+        <div class="close-btn" id="close-btn"><i class="fa-solid fa-xmark"></i></div>
+        <div class="text">
+          <div>باش تجيب<span id="x2"> x </span>خاص</div>
+          <input type="number" name="" disabled id="result-allnx">
+        </div>
+      </div>
+    </div>
+  </form>
+  <script src="js/all.min.js"></script>
+  <script src="js/needx.js"></script>
+</body>
+
+</html>

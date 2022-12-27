@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div>حساب نقطة الوطني</div><a id="back"><i class="fa-solid fa-arrow-left"></i></a>
+  </header>
+  <form class="container">
+    <div class="subject">
+      <div class="title active">
+        <strong>الرياضيات</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points active">
+        <div class="pointscontainer">
+          <div class="matinp point">
+            <label for="matinp">النقطة</label>
+            <input type="number" name="" id="matinp" min="0" max="20">
+          </div>
+          <div class="matm3ml point">
+            <label for="matm3ml">المعامل</label>
+            <input type="number" name="" id="matm3ml" value="7" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <div class="title">
+        <strong>الفلسفة</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points">
+        <div class="pointscontainer">
+          <div class="phinp point">
+            <label for="phinp">النقطة</label>
+            <input type="number" name="" id="phinp" min="0" max="20">
+          </div>
+          <div class="phm3ml point">
+            <label for="phm3ml">المعامل</label>
+            <input type="number" name="" id="phm3ml" value="2" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <div class="title">
+        <strong>الفيزياء والكيمياء</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points">
+        <div class="pointscontainer">
+          <div class="pcinp point">
+            <label for="pcinp">النقطة</label>
+            <input type="number" name="" id="pcinp" min="0" max="20">
+          </div>
+          <div class="pcm3ml point">
+            <label for="pcm3ml">المعامل</label>
+            <input type="number" name="" id="pcm3ml" value="5" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <div class="title">
+        <strong>اللغة الإنجليزية</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points">
+        <div class="pointscontainer">
+          <div class="enginp point">
+            <label for="enginp">النقطة</label>
+            <input type="number" name="" id="enginp" min="0" max="20">
+          </div>
+          <div class="engm3ml point">
+            <label for="engm3ml">المعامل</label>
+            <input type="number" name="" id="engm3ml" value="2" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <div class="title">
+        <strong>علوم الحياة والأرض</strong><i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="points">
+        <div class="pointscontainer">
+          <div class="svtinp point">
+            <label for="svtinp">النقطة</label>
+            <input type="number" name="" id="svtinp" min="0" max="20">
+          </div>
+          <div class="svtm3ml point">
+            <label for="svtm3ml">المعامل</label>
+            <input type="number" name="" id="svtm3ml" value="7" min="0" max="20">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="calc">
+      <input type="button" value="حساب" id="calcnat">
+      <!-- <input type="number" style="background-color: #f3f3f3;" name="" id="result"> -->
+    </div>
+    <div class="popup">
+      <div class="overlay" id="overlay"></div>
+      <div class="content" id="popup">
+        <div class="close-btn" id="close-btn"><i class="fa-solid fa-xmark"></i></div>
+        <div class="text">
+          <div>معدل الوطني :</div>
+          <input type="number" name="" disabled id="nat-result">
+        </div>
+      </div>
+    </div>
+  </form>
+  <script src="js/all.min.js"></script>
+  <script src="js/national.js"></script>
+</body>
+
+</html>
