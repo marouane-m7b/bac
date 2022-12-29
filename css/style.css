@@ -13,6 +13,7 @@
     --dark-blue: #00263f;
     --darkest-blue: #001320;
     --light-blue: #54a0ff;
+    --light-blue-opacity: #54a0ff50;
     --blue: #1f8dd6;
     --blue-plus: #1070b1;
     --transparent: transparent;
@@ -25,6 +26,7 @@
     --dark-blue: #000000;
     --darkest-blue: #141414;
     --light-blue: #525252;
+    --light-blue-opacity: #52525250;
     --blue: #2c2c2c;
     --blue-plus: #141414;
     --transparent: transparent;
@@ -396,3 +398,202 @@ div.count p {
 .ball {
     z-index: -5;
 }
+/* delete data */
+.delete {
+    border: 3px solid var(--light-blue);
+    background-color: var(--light-blue-opacity);
+    font-size: 15px;
+    font-family: var(--main-font);
+    padding: 5px 20px;
+    color: var(--blue-plus);
+    border-radius: 500px;
+    box-shadow: 1px 1px 20px var(--light-blue-opacity);
+    cursor: pointer;
+}
+
+.popupdel .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    /* delete */
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.popupdel .content {
+    display: grid;
+    place-content: center;
+    width: 50%;
+    height: 50%;
+    background-color: var(--blue-plus);
+    border: 2px solid white;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* delete */
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.3s;
+}
+
+.popupdel .content.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.3s;
+}
+
+.popupdel .content svg {
+    width: 30px;
+    height: 30px;
+    background-color: var(--blue-plus);
+    border: 2px solid white;
+    position: fixed;
+    top: -15px;
+    left: -15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popupdel .content .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupdel .content .text div {
+    font-size: 20px;
+    margin: 30px;
+    font-family: var(--main-font);
+}
+.popupdel .content .inputs { 
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.popupdel .content input {
+    border: 2px solid white;
+    color: var(--black);
+    background-color: var(--main-white);
+    font-size: 15px;
+    font-family: var(--main-font);
+    text-align: center;
+    padding: 0 15px;
+    width: 30%;
+    cursor: pointer;
+}
+.popupdel .content input#yes:hover {
+    background-color: red;
+
+}
+.popupdel .content input#no:hover {
+    background-color: green;
+
+}
+
+@media (max-width:768px) {
+    .popupdel .content {
+        width: 80%;
+        height: 20%;
+    }
+
+    .popupdel .content .text div {
+        margin: 10px;
+    }
+}
+
+
+
+/* feliere */
+.popupfl .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    /* delete */
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.popupfl .content {
+    display: grid;
+    place-content: center;
+    width: 50%;
+    height: 50%;
+    background-color: var(--blue-plus);
+    border: 2px solid white;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* delete */
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.3s;
+}
+
+.popupfl .content.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.3s;
+}
+
+
+.popupfl .content .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupfl .content .text div {
+    font-size: 20px;
+    margin: 30px;
+    font-family: var(--main-font);
+}
+.popupfl .content .inputs { 
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.popupfl .content input {
+    border: 2px solid white;
+    color: white;
+    background-color: var(--blue-plus);
+    font-size: 15px;
+    font-family: var(--main-font);
+    text-align: center;
+    padding: 0 15px;
+    width: 30%;
+    cursor: pointer;
+}
+.popupfl .content input#yes:hover {
+    background-color: var(--blue-plus);
+
+}
+.popupfl .content input#no:hover {
+    background-color: var(--blue-plus);
+
+}
+
+@media (max-width:768px) {
+    .popupfl .content {
+        width: 80%;
+        height: 20%;
+    }
+
+    .popupfl .content .text div {
+        margin: 10px;
+    }
+}
+
+
+

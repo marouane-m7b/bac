@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1838074675717196"
-     crossorigin="anonymous"></script>
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
 </head>
 
 <body id="body" style="overflow: hidden;">
@@ -38,10 +37,23 @@
         <a href="count.html">
             <div class="title2">شحال باقي للوطني</div>
         </a>
+        <button id="delete" class="delete">مسح جميع النقط</button>
     </div>
-
+    <div class="popupdel">
+        <div class="overlay" id="overlaydel"></div>
+        <div class="content" id="popupdel">
+            <div class="close-btn" id="close-btndel"><i class="fa-solid fa-xmark"></i></div>
+            <div class="text">
+                <div>هل تريد مسح جميع النقط ؟</div>
+                <div class="inputs">
+                    <input type="button" value="نعم" name="" id="yes">
+                    <input type="button" value="لا" name="" id="no">
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/toggle.js"></script>
-    </script>
+    <script src="js/all.min.js"></script>
 </body>
 
 </html>

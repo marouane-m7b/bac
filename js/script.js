@@ -189,3 +189,21 @@ back.onclick = function(){
 window.onload = function(){
     document.body.classList.value = window.localStorage.getItem('body')
 }
+
+let overlayfl = document.getElementById('overlayfl');
+let popupfl = document.getElementById('popupfl');
+let svtfl = document.getElementById('svtfl');
+let pcfl = document.getElementById('pcfl');
+let svttitle = document.getElementById('svttitle');
+let pctitle = document.getElementById('pctitle');
+
+svtfl.onclick = function(){
+    overlayfl.classList.remove('active');
+    popupfl.classList.remove('active');
+}
+pcfl.onclick = function(){
+    overlayfl.classList.remove('active');
+    popupfl.classList.remove('active');
+    svttitle.outerHTML = '<strong id="pctitle">الفيزياء والكيمياء</strong>';
+    pctitle.outerHTML = '<strong id="svttitle">علوم الحياة والأرض</strong>';
+}

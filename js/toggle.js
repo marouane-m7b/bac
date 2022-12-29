@@ -8,8 +8,8 @@ check.onclick = function () {
 
 window.onload = function () {
     document.body.classList.value = window.localStorage.getItem('body');
-    if (document.body.classList.contains('dark-theme')){
-        check.setAttribute('checked','');
+    if (document.body.classList.contains('dark-theme')) {
+        check.setAttribute('checked', '');
     }
 }
 
@@ -54,3 +54,35 @@ balls.forEach((el, i, ra) => {
         }
     );
 });
+
+
+let dellete = document.getElementById('delete');
+let overlay = document.getElementById('overlaydel');
+let popup = document.getElementById('popupdel');
+let closeBtn = document.getElementById('close-btndel');
+let yes = document.getElementById('yes');
+let no = document.getElementById('no');
+dellete.onclick = function () {
+    overlay.classList.toggle('active');
+    popup.classList.toggle('active');
+}
+closeBtn.onclick = function () {
+    overlay.classList.toggle('active');
+    popup.classList.toggle('active');
+}
+yes.onclick = function () {
+    if (document.body.classList.contains('dark-theme')) {
+        window.localStorage.clear();
+        window.localStorage.setItem('body','dark-theme bgray');
+        overlay.classList.toggle('active');
+        popup.classList.toggle('active');
+    } else {
+        window.localStorage.clear();
+        overlay.classList.toggle('active');
+        popup.classList.toggle('active');
+    }
+}
+no.onclick = function () {
+    overlay.classList.toggle('active');
+    popup.classList.toggle('active');
+}
