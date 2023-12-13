@@ -1,7 +1,7 @@
 // Set the date we're counting down to
 let lyoum = new Date();
 let year = 0;
-if (lyoum.getMonth() > 6 && lyoum.getDate() > 6) {
+if (lyoum.getMonth() > 6 && lyoum.getDate() > 7) {
     year = lyoum.getFullYear() + 1
 } else {
     year = lyoum.getFullYear()
