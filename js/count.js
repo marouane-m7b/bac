@@ -1,5 +1,14 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Jun 6, 2023 08:30:00").getTime();
+let lyoum = new Date();
+let year = 0;
+if (lyoum.getMonth() > 6 && lyoum.getDate() > 6) {
+    year = lyoum.getFullYear() + 1
+} else {
+    year = lyoum.getFullYear()
+}
+
+
+var countDownDate = new Date(`Jun 6, ${year} 08:30:00`).getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
